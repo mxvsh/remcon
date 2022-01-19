@@ -1,0 +1,20 @@
+{
+	"name": "remcon",
+	"version": "1.0.0",
+	"description": "Watch console.log output inside a browser",
+	"main": "lib/index.js",
+	"license": "MIT",
+	"scripts": {
+		"build": "babel src/index.js -d lib",
+		"start": "npm run build && node lib/index.js"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.16.8",
+		"@babel/core": "^7.16.7",
+		"@babel/preset-env": "^7.16.8",
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"socket.io-client": "^4.4.1"
+	}
+}
